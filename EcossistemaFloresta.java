@@ -21,7 +21,7 @@ public class EcossistemaFloresta {
         }
 
         // Loop do jogo
-        for (int tempo = 1; tempo <= 10; tempo++) {
+        for (int tempo = 1; tempo <= 5; tempo++) {
             System.out.println("Tempo " + tempo + ":");
 
             // Gerar aleatoriamente um fenômeno natural
