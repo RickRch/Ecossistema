@@ -66,6 +66,4 @@ public class EcossistemaFloresta {
         }
     }
 
-    private static void caonçaça() {
     }
-}
