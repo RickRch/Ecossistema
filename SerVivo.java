@@ -1,4 +1,4 @@
-public class SerVivo {
+public abstract class SerVivo {
     private String nome;
     private int idade;
 
@@ -18,4 +18,6 @@ public class SerVivo {
     public int getIdade() {
         return idade;
     }
+
+    public abstract void realizarAcoes(FenomenoNatural fenomeno);
 }
