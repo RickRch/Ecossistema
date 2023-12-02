@@ -1,5 +1,5 @@
-class Onça extends Animal {
-    public Onça(String nome, int idade) {
+public class Onca extends Animal {
+    public Onca(String nome, int idade) {
         super(nome, idade);
     }
 
@@ -8,7 +8,8 @@ class Onça extends Animal {
         System.out.println(getNome() + " está correndo.");
     }
 
-    public void caça() {
+    @Override
+    public void comer() {
         System.out.println(getNome() + " está caçando.");
     }
 }
