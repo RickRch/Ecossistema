@@ -1,10 +1,23 @@
-class Chuva extends FenomenoNatural {
-    
-    public Chuva() {
-        super("Chuva");
+public class Arvore extends SerVivo {
+    public Arvore(String nome, int idade) {
+        super(nome, idade);
     }
 
-    public void ocorrer() {
-        System.out.println("Está chovendo.");
+    @Override
+    public void crescer() {
+        System.out.println(getNome() + " está crescendo.");
+        super.crescer();
+    }
+
+    @Override
+    public void realizarAcoes(FenomenoNatural fenomeno) {
+        crescer();
+        if (fenomeno instanceof Chuva) {
+            reproduzir();
+        }
+    }
+
+    public void reproduzir() {
+        System.out.println(getNome() + " está soltando sementes.");
     }
 }
