@@ -1,4 +1,4 @@
-class FenomenoNatural {
+public class FenomenoNatural {
     private String nome;
 
     public FenomenoNatural(String nome) {
@@ -7,5 +7,25 @@ class FenomenoNatural {
 
     public String getNome() {
         return nome;
+    }
+}
+
+public class Chuva extends FenomenoNatural {
+    public Chuva() {
+        super("Chuva");
+    }
+
+    public void ocorrer() {
+        System.out.println("Está chovendo.");
+    }
+}
+
+public class Tempestade extends FenomenoNatural {
+    public Tempestade() {
+        super("Tempestade");
+    }
+
+    public void ocorrer() {
+        System.out.println("Uma tempestade está acontecendo.");
     }
 }
